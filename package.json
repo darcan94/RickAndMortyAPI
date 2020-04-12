@@ -10,7 +10,7 @@
   "keywords": [
     "javascript"
   ],
-  "author": "",
+  "author": "Dario Candia <darcanf.94@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.0",
