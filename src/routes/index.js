@@ -9,7 +9,7 @@ const routes = {
     '/': Home,
     '/:id':Characters,
     '/Contact':'Contact',
-}
+};
 
 const router = async () => {
     const header = null || document.getElementById('header');
@@ -21,6 +21,6 @@ const router = async () => {
     let route = await resolveRoutes(hash);
     let render = routes[route] ? routes[route] : Error404;
     section.innerHTML = await render();
-}
+};
 
 export default router;

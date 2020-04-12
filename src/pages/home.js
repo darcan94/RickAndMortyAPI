@@ -1,12 +1,12 @@
 import getData from '../utils/getData';
-import Character from './characters';
+
 
 const Home = async () => {
-    const Characters = await getData();
+    const characters = await getData();
     const view = `
-        <div class="Characters">
-            ${Characters.results.map(character => `
-                <article class="Character-item">
+        <div class="characters">
+            ${characters.results.map(character => `
+                <article class="character-item">
                 <a href="#/${character.id}/">
                     <img src="${character.image}" alt="${character.name}"/>
                     <h2>${character.name}</h2>
